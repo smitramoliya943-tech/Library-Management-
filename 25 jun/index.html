@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library_Management</title>
+    <style>
+        table {git 
+            width: 50vw;
+            margin: auto;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        thead,
+        tbody {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        tr {
+            display: flex;
+            gap: 10px;
+        }
+
+        td,
+        th {
+            flex-grow: 1;
+            border: 2px solid rgb(228, 34, 34);
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            color: rgb(0, 0, 0);
+            font-family: calibri;
+            font-size: 24px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-family: verdana;
+            font-size: 24px;
+            color: rgb(27, 27, 27);
+            background-color: rgb(185, 125, 235);
+            border: none;
+            border-radius: 16px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(162, 42, 241);
+            transform: scale(1.1);
+        }
+
+        .show {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <main>Total books :</main>
+
+    <section>
+        <button class="display">Display All</button>
+        <button class="Add Book">Add New Book</button>
+        <button class="delete">Delete Data</button>
+        <button class="issue">Issue Book</button>
+        <button class="return">Return Book</button>
+        <button class="available">Book available</button>
+    </section>
+
+    <table border="">
+        <thead>
+            <tr>
+                <th>ID No.</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="Library.js"></script>
+</body>
+
+</html>
